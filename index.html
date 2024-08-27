@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <button class="btnDark">Dark</button>
+    <button class="btnLight">Light</button>
+
+    <div class="mainNav">
+    <h1>ToDo List</h1>
+    <input class="inpSearch" placeholder="Search by name" type="text" name="" id="">
+    <button class="btnAdd">+New</button>
+</div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>FullName</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody class="box"></tbody>
+    </table>
+
+
+    <dialog class="AddDialog">
+        <form class="AddForm">
+            <input name="AddFullName" placeholder="Add Full Name" type="text" id="">
+            <input name="AddEmail" placeholder="Add Email" type="text" id="">
+            <input name="AddPhone" placeholder="Add Phone" type="text" id="">
+            <button>Save</button>
+        </form>
+        <button class="btnAddClose">x</button>
+    </dialog>
+
+
+    <dialog class="EditDialog">
+        <form class="EditForm">
+            <input name="EditFullName" placeholder="Edit Full Name" type="text" id="">
+            <input name="EditEmail" placeholder="Edit Email" type="text" id="">
+            <input name="EditPhone" placeholder="Edit Phone" type="text" id="">
+            <button>Save</button>
+        </form>
+        <button class="btnEditClose">x</button>
+    </dialog>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
